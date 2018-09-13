@@ -1,0 +1,187 @@
+
+@-webkit-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@-moz-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+ .scroll-btn {
+	display: block;
+	text-align: center;
+}
+.scroll-btn > * {
+	display: inline-block;
+	line-height: 18px;
+	font-size: 13px;
+	font-weight: normal;
+	color: #7f8c8d;
+	color: #ffffff;
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 2px;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+	color: #ffffff;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+	position: relative;
+	display: block;
+	width: 35px;
+	height: 55px;
+	margin: 0 auto 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid white;
+	border-radius: 23px;
+}
+.scroll-btn .mouse > * {
+	position: absolute;
+	display: block;
+	top: 29%;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+	background: white;
+	border-radius: 50%;
+	-webkit-animation: ani-mouse 2.5s linear infinite;
+	-moz-animation: ani-mouse 2.5s linear infinite;
+	animation: ani-mouse 2.5s linear infinite;
+}
+head,body{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: gilroy, Arial, Helvetica, sans-serif;
+    color:white;
+}
+ul{
+    list-style: none;
+}
+h2{
+    font-size: 34px;
+    margin: 0;
+}
+.container-fluid{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.link{
+    transition: color 0.2s ease-out;
+}
+.link:hover{
+    color: #aaaaaa;
+    cursor: pointer;
+}
+.pageWrapper{
+    width: 100%;
+    height: 100vh;
+}
+.wrapper{
+    padding: 40px 100px;
+    position: relative;
+}
+.logo{
+    width: 118px;
+}
+.logo img{
+    width: 100%;
+}
+.topBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topMenu > ul{
+    display: flex;
+}
+.topMenu > ul > li{
+    margin-left: 35px;
+}
+.homePage{
+    background: url('../images/homeBack.jpeg');
+    position: relative;
+}
+.homePage:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+.homeDescription{
+    margin-top: 200px;
+}
+.homeDescription h2{
+    width: 470px;
+}
+.homeDescription p{
+    margin-top: 10px;
+    font-weight: 300;
+    width: 385px;
+}
+.scrollDownHint{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-100%);
+}
