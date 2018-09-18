@@ -4,9 +4,14 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/fonts.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/app.js"></script>
+
 </head>
 <body>
     <div id="app">
+        <div class="loadingScreen">
+            <div class="percentage">0%</div>
+        </div>
         <div class="pageWrapper">
             <div class="wrapper">
                 <div class="container-fluid topBar">
@@ -17,13 +22,13 @@
                         <div class="topMenu">
                             <ul>
                                 <li>
-                                    <a class="link">About</a>
+                                    <a class="link" href="#clients">Clients</a>
                                 </li>
                                 <li>
-                                    <a class="link">Services</a>
+                                    <a class="link" href="#services">Services</a>
                                 </li>
                                 <li>
-                                    <a class="link">Contact</a>
+                                    <a class="link" href="#contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -47,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section sectionClients">
+                <div class="section sectionClients" id="clients">
                     <div class="sectionWrapper">
                         <div class="background-container">
                         </div>
@@ -67,7 +72,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section sectionServices">
+                <div class="section sectionServices" id="services">
                     <div class="sectionWrapper">
                         <div class="background-container">
                         </div>
@@ -88,7 +93,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section sectionContact">
+                <div class="section sectionContact" id="contact">
                     <div class="sectionWrapper">
                         <div class="content">
                             <div class="row">
@@ -97,7 +102,7 @@
                                         Start your project
                                     </div>
                                     <div class="heavyHeading">
-                                        with us
+                                        with us.
                                     </div>
                                 </div>
                                 <div class="verticalSeperator"></div>
@@ -117,6 +122,5 @@
             </div>
         </div>
     </div>
-    <script src="js/app.js"></script>
 </body>
 </html>
