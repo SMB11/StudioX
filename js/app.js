@@ -12,8 +12,10 @@ const loadingInterval = setInterval(function(){
         endLoading();
         return;
     }
-    $('.percentage').html(++percent + '%');
-}, 10);
+    const add =  Math.floor(Math.random()*10+1);
+    const res = percent+add;
+    $('.percentage').html(res > 100? 100: res + '%');
+}, 60);
 
 function endLoading(){
     clearInterval(loadingInterval);
