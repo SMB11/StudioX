@@ -3,9 +3,16 @@
     <title>StudioX</title>
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/app.js"></script>
+     <script src="js/wow.min.js"></script>
+              <script>
 
+              
+              </script>
+    <link rel="icon" href="images/ico.png" type="image/x-icon"/>
 </head>
 <body>
     <div id="app">
@@ -15,11 +22,11 @@
         <div class="pageWrapper">
             <div class="wrapper">
                 <div class="container-fluid topBar">
-                    <div class="extend-container ">
+                    <div class="extend-container wow fadeIn" data-wow-duration="4s" data-wow-delay="2s">
                         <div class="logo">
                             <img src="images/logo.png" />
                         </div>
-                        <div class="topMenu">
+                        <div class="topMenu ">
                             <ul>
                                 <li>
                                     <a class="link" href="#clients">Clients</a>
@@ -37,12 +44,12 @@
                 <div class="section sectionHome">
                     <div class="sectionWrapper">
                         <div class="background-container">
-                            <div class="glass"></div>
+                            <div class="glass wow slideInLeft" data-wow-duration="2s"></div>
                         </div>
                         <div class="content">
                             <div class="extend-container">
-                                <div class="homeDescription">
-                                    <h2>Creating Digital Experiences that Help Grow Businesses</h2>
+                                <div class="homeDescription wow fadeIn" data-wow-duration="4s" data-wow-delay="2s">
+                                    <h2 class="homeH">Creating Digital Experiences that Help Grow Businesses</h2>
                                     <p>We help businesses grow, launch products and 
                                             gain a competitive advantage in today's 
                                             digital-led world.</p>
@@ -58,17 +65,24 @@
                         </div>
                         <div class="content">
                             <div class="row">
-                                <div class="sticker left">
-                                    
-                                </div>
-                                <div class="sectionTitle">
-                                    <div class="sectionInfo">
-                                        <div class="smallHeader">OUR FRIENDS</div>
-                                        <div class="header">Along for the Ride.</div>
-                                        <div class="bigHeader">Check out our awesome friends.</div>
+                                <div class="sticker left wow slideInLeft" data-wow-duration="0.8s">
+                                    <div class="roww">
+                                      <div class="cell" ><img class="logos " src="images/logos/logo1.png" height="100px" width="100px"/></div>
+                                      <div class="cell">
+                                          <img class="logos" src="images/logos/logo2.png" height="100px" width="100px"/></div>
+                                     
+                                       <div class="cell"> <img class="logos" src="images/logos/logo3.png" height="100px" width="100px" /></div>
+                                        <div class="cell"><img class="logos" src="images/logos/logo4.png" height="100px" width="100px"/></div>
+                                    </div>
+                                    </div>
+                                    <div class="sectionTitle wow slideInLeft" data-wow-duration="0.8s">
+                                        <div class="sectionInfo ">
+                                            <div class="smallHeader">OUR FRIENDS</div>
+                                            <div class="header">Along for the Ride.</div>
+                                            <div class="bigHeader">Check out our awesome friends.</div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -79,15 +93,40 @@
                         <div class="content">
                             <div class="row">
                                 
-                                <div class="sectionTitle">
+                                <div class="sectionTitle " data-wow-duration="0.8s" >
                                     <div class="sectionInfo">
                                         <div class="smallHeader">OUR SERVICES</div>
                                         <div class="header">Along for the Ride.</div>
                                         <div class="bigHeader">Check out what we have to offer.</div>
                                     </div>
                                 </div>
-                                <div class="sticker">
-                                    
+                                <div class="sticker " data-wow-duration="0.8s" >
+                                    <div class="qualification">
+                                        <div class="heading">Design</div>
+                                        <ul class="elements">
+                                            <li>UI/UX</li>
+                                            <li>Graphics Design</li>
+                                            <li>Web Design</li>
+                                        </ul>
+                                    </div>
+                                    <div class="qualification">
+                                        <div class="heading">Web Development</div>
+                                        <ul class="elements">
+                                            <li>SEO</li>
+                                            <li>E-commerce Solutions</li>
+                                            <li>Database Development</li>
+                                            <li>Website Speed Optimization</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="qualification">
+                                        <div class="heading">Security</div>
+                                        <ul class="elements">
+                                            <li>Website Security</li>
+                                            <li>Planning</li>
+                                            <li>Data Security</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -97,7 +136,7 @@
                     <div class="sectionWrapper">
                         <div class="content">
                             <div class="row">
-                                <div class="startText">
+                                <div class="startText "  >
                                     <div class="lighterHeading">
                                         Start your project
                                     </div>
@@ -106,9 +145,10 @@
                                     </div>
                                 </div>
                                 <div class="verticalSeperator"></div>
+                                <hr class="separator">
                                 <div class="startForm">
-                                    <form name="startProject">
-                                        <input type="text" name="Name"  placeholder="Name"/>
+                                    <form name="startProject" id="contact-form" method="post" action="contact-form-handler.php">
+                                        <input type="text" name="Name"  placeholder="Name" />
                                         <input type="text" name="Email"  placeholder="Email"/>
                                         <label>Shortly describe your project</label>
                                         <textarea name="description"></textarea>

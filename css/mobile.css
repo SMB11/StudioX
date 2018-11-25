@@ -1,0 +1,116 @@
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+   body{
+   	overflow-x: hidden;
+   }
+   .sectionHome{
+	zoom:350%;
+   }
+ /*  .homeDesription{
+   	left: 100%;
+   }
+  .homeDescription h2{
+	width: 200px;
+  }*/
+  .homeH{
+	font-size: 20px;
+  }
+  .link{
+  	font-size: 40px;
+  }
+  .logo{
+  	width: 250px;
+  }
+  .homeDescription{
+  	left: 100%;
+  	width: 100%;
+  }
+  .homeDescription h2{
+	width: 215px;
+	margin-left: 15px;
+}
+
+.homeDescription p {
+    width: 260px;
+    font-weight: 200;
+    margin-top: 25px;
+    margin-left: 14px;
+}
+
+.topBar .extend-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.percentage{
+	zoom: 400%;
+}
+.sectiontitle{
+
+}
+.sectionClients .row{
+  flex-direction: column-reverse;
+}
+.sectionServices .row{
+  flex-direction: column;
+}
+.sticker{
+  width: 100%;
+  zoom:230%;
+}
+
+.smallHeader{
+    font-size: 30px;
+}
+.header{
+  font-size: 40px;
+}
+.bigHeader{
+  font-size: 60px;
+}
+.sectionServices .header{
+  color: #1a1a1a;
+}
+.sectionServices .bigHeader{
+  color: #1a1a1a;
+}
+.qualification .heading {
+    font-size: 25px;
+}
+.qualification .elements li {
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+.sectionContact .row{
+  display: flex;
+  flex-direction: column;
+}
+.verticalSeperator {
+  display: none;
+}
+.startText {
+    margin-right: 100px;
+    padding-bottom: 40px;
+}
+.startForm form {
+  zoom:150%;
+  margin-left: 0px;
+}
+.heavyHeading{
+  margin-bottom: 70px;
+}
+.separator{
+  display: block;
+    width: 100%;
+    margin-bottom: 110px;
+}
+.logos{
+    width:100px;
+    height:100px;
+}
+.cell{
+  padding: 50px;
+}
+}
+

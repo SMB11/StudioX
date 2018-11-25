@@ -14,11 +14,17 @@ const loadingInterval = setInterval(function(){
     }
     const add =  Math.floor(Math.random()*10+1);
     const res = percent+add;
-    $('.percentage').html(res > 100? 100: res + '%');
+    $('.percentage').html(res > 100? 100+'%': res + '%');
 }, 60);
 
 function endLoading(){
     clearInterval(loadingInterval);
-    $('.pageWrapper').show();
-    $('.loadingScreen').fadeOut();
+
+            var wow = new WOW();
+    
+    setTimeout(function(){
+        $('.pageWrapper').css('display', 'block');
+        $('.loadingScreen').fadeOut();
+        wow.init();
+    }, 100);
 }
